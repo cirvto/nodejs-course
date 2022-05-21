@@ -1,4 +1,5 @@
-# About
+# The Complete Node.js Developer Course
+## About
 I'm learning NodeJS with "The Complete Node.js Developer Course", taught by Andrew Mead on Udemy.
 ### What is and Why should I use Node.js?
 Following the definition of Wikipedia:
