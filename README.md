@@ -11,5 +11,7 @@ A Blocking operation is where further execution is impeded to be finished until 
 Non-Blocking operation it's the opposite. While blocking prevents the operation, the non-blocking let all the operation pass and use them according the demand.
 #### First Node.js script
 A basic script to console 'Hello Node.js' in terminal.
+
 ```console.log('Hello Node.js');```
+
 It's interesting how it's similar to Javascript code, it's because it is a command created to guide the engine to compile a console as result of something. Node.js, as Javascript, uses the same code because both use the same engine.
