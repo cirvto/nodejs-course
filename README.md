@@ -36,3 +36,21 @@ fs.appendFileSync('fileName', 'dataYouWantToWrite);
 ```
 Here was a little tricky, because I was trying to find some way to write a new line. I started to search about "append text in a new line node.js", and guess what? We do it in the same way as the lessons of PHP in faculty: using '\n' to jump to the next line. So it was easy, because I already knew about how to use special characters in your code.
 
+## Lesson 2 - Importing Your Own Files
+In this lesson we diver better in the Require system. More examples of what happen in the code when you use this to require another code or file from your folder. To exemplify we created two files: app.js and utils.js, app.js should use commands and code from utils.js. It was easy to handle, because the code is the same as the last lesson:
+
+File: app.js:
+```
+require('./utils);
+console.log(name);
+```
+
+File: utils.js:
+```
+const name = 'Victor';
+
+module.exports = name
+```
+
+After this code, we can access the constant name from file utils.js to app.js. I have to be on alert with the spelling code, a simple misspelling can result in a huge problem. In the challenge I forgot to spell the 's' in the end of 'modules' and i spent a lot of time searching the error.
+
