@@ -81,3 +81,22 @@ console.log(validator.isEmail('someone@example.com'))
 the result should be 'true' as the passed string is a valid email shape.
 Remember, you should use require to add the validator package in your code.
 
+## Lesson 4 - Global NPM Modules and Nodemon
+### What is Nodemon?
+Following the definition of nodemon's page in npmjs.com:
+> Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+Here we have a difference between nodemon and the others packages we just learned to use in this course: nodemon don't use Require to run in a code. If you watch, nodemon dependecie even exists in the package.json file. 
+
+### How to use Nodemon?
+After the installation using:
+```
+npm i nodemon -g
+```
+
+you can use the nodemon in the whole directory, that`s because you used the -g flag to inform that line is a Global command. After this you can use the following code to run a code with nodemon:
+```
+nodemon fileName.js
+```
+
+and that's it, your file will be runned with nodemon and every change in the file will reflect in the result instantly.
