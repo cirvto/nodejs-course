@@ -54,3 +54,30 @@ module.exports = name
 
 After this code, we can access the constant name from file utils.js to app.js. I have to be on alert with the spelling code, a simple misspelling can result in a huge problem. In the challenge I forgot to spell the 's' in the end of 'modules' and i spent a lot of time searching the error.
 
+## Lesson 3 - Importing NPM Modules
+Until now, we just make simple things with our own files that we created. But what if we could use a module that already exists? NPM Modules has a huge library of things to use that is much more easy than create your own things. I'm not saying that you will just use commands that other person made, you still doing your job. What I mean is: you can make your job easier by just focusing in things that correspond specifically to the project that you're working on.
+
+### Installing NPM
+First of all we have to install NPM, to do it you have to run a simple command line:
+```
+npm init
+```
+after this command line, a couple of files will be generated and you'll be able to apply packages on them.
+
+### Applying Dependencies
+To apply package you should run a command:
+```
+npm install >>package name<<
+or
+npm i >>package name<<
+```
+In the lesson we used the package 'validator' which validate a lot of informations from your code.
+
+### Validating Email
+Example of how to use the validator package just by using him to validate a string:
+```
+console.log(validator.isEmail('someone@example.com'))
+```
+the result should be 'true' as the passed string is a valid email shape.
+Remember, you should use require to add the validator package in your code.
+
